@@ -1,0 +1,69 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>AmazonAccountEffectiveMarketPlaceIdServlet</servlet-name>
+    <display-name>AmazonAccountEffectiveMarketPlaceIdServlet</display-name>
+    <description></description>
+    <servlet-class>com.amazon.alexa.comms.async.servlets.AmazonAccountEffectiveMarketPlaceIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AmazonAccountCountryOfResidenceServlet</servlet-name>
+    <display-name>AmazonAccountCountryOfResidenceServlet</display-name>
+    <description></description>
+    <servlet-class>com.amazon.alexa.comms.async.servlets.AmazonAccountCountryOfResidenceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownloadAlexaAPKAndSignInCodeSignerServlet</servlet-name>
+    <display-name>DownloadAlexaAPKAndSignInCodeSignerServlet</display-name>
+    <description></description>
+    <servlet-class>com.amazon.alexa.comms.async.servlets.DownloadAlexaAPKAndSignInCodeSignerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AmazonAccountHouseHoldServlet</servlet-name>
+    <display-name>AmazonAccountHouseHoldServlet</display-name>
+    <description></description>
+    <servlet-class>com.amazon.alexa.comms.async.servlets.AmazonAccountHouseHoldServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>VoicePurchasingServlet</servlet-name>
+    <display-name>VoicePurchasingServlet</display-name>
+    <description></description>
+    <servlet-class>com.amazon.alexa.comms.async.servlets.VoicePurchasingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AccountCreationServlet</servlet-name>
+    <display-name>AccountCreationServlet</display-name>
+    <description></description>
+    <servlet-class>com.amazon.alexa.comms.async.servlets.AccountCreationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AmazonAccountEffectiveMarketPlaceIdServlet</servlet-name>
+    <url-pattern>/getAmazonAccountEffectiveMarketPlaceId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AmazonAccountCountryOfResidenceServlet</servlet-name>
+    <url-pattern>/setAmazonAccountCountryOfResidence</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadAlexaAPKAndSignInCodeSignerServlet</servlet-name>
+    <url-pattern>/downloadAlexaAPKAndSignInCodeSigner</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AmazonAccountHouseHoldServlet</servlet-name>
+    <url-pattern>/addAmazonAccountsAsHouseHold</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VoicePurchasingServlet</servlet-name>
+    <url-pattern>/voicePurchasingToggle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AccountCreationServlet</servlet-name>
+    <url-pattern>/createTestAccounts</url-pattern>
+  </servlet-mapping>
+</web-app>
+
+
